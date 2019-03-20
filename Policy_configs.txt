@@ -1,0 +1,91 @@
+Ton configure the required policy for the IAM role choose S3FullAccess and SagemakerFullAccess policies.
+
+Proceed to add the following inline policies:
+
+### Bucket policy:
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "s3:GetObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::*"
+            ],
+            "Effect": "Allow"
+        },
+        {
+            "Action": [
+                "s3:ListBucket"
+            ],
+            "Resource": [
+                "arn:aws:s3:::*"
+            ],
+            "Effect": "Allow"
+        },
+        {
+            "Action": [
+                "s3:PutObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::*"
+            ],
+            "Effect": "Allow"
+        }
+    ]
+}
+
+### Comprehend policy:
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowDetectActions",
+            "Effect": "Allow",
+            "Action": [
+                "s3:*",
+                "comprehend:*"
+                "iam:PassRole"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+
+### Transcribe policy:
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowDetectActions",
+            "Effect": "Allow",
+            "Action": [
+                "s3:*",
+                "transcribe:*",
+                "iam:PassRole"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+
+---Trust relationship:
+
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "Service": [
+          "comprehend.amazonaws.com",
+          "sagemaker.amazonaws.com"
+        ]
+      },
+      "Action": "sts:AssumeRole"
+    }
+  ]
+}
