@@ -1,0 +1,12 @@
+Blogs:
+https://aws.amazon.com/blogs/machine-learning/analyzing-contact-center-calls-part-1-use-amazon-transcribe-and-amazon-comprehend-to-analyze-customer-sentiment/
+https://aws.amazon.com/blogs/machine-learning/use-aws-machine-learning-to-analyze-customer-calls-from-contact-centers-part-2-automate-deploy-and-visualize-analytics-using-amazon-transcribe-amazon-comprehend-aws-cloudformation-and-amazon-q/
+https://aws.amazon.com/blogs/machine-learning/automated-and-continuous-deployment-of-amazon-sagemaker-models-with-aws-step-functions/
+https://aws.amazon.com/blogs/machine-learning/deploy-trained-keras-or-tensorflow-models-using-amazon-sagemaker/
+https://aws.amazon.com/blogs/machine-learning/read-wordpress-sites-through-amazon-alexa-devices/
+https://aws.amazon.com/blogs/machine-learning/identifying-bird-species-on-the-edge-using-the-amazon-sagemaker-built-in-object-detection-algorithm-and-aws-deeplens/
+https://aws.amazon.com/blogs/machine-learning/discovering-and-indexing-podcast-episodes-using-amazon-transcribe-and-amazon-comprehend/
+https://aws.amazon.com/blogs/machine-learning/shopper-sentiment-analyzing-in-store-customer-experience/
+https://aws.amazon.com/blogs/machine-learning/introduction-to-amazon-sagemaker-object2vec/
+https://aws.amazon.com/blogs/machine-learning/analyze-live-video-at-scale-in-real-time-using-amazon-kinesis-video-streams-and-amazon-sagemaker/
+https://aws.amazon.com/blogs/machine-learning/anomaly-detection-on-amazon-dynamodb-streams-using-the-amazon-sagemaker-random-cut-forest-algorithm/
